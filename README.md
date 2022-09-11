@@ -8,4 +8,13 @@
 <h1> HOME PAGE </h1>
 <img src="https://github.com/rachana703/cs648_assignments/blob/main/Assignment_2/screenshots/index.PNG">
 
+<h1> ABOUTUS PAGE </h1>
+<img src="<h1> HOME PAGE </h1>
+<img src="https://github.com/rachana703/cs648_assignments/blob/main/Assignment_2/screenshots/aboutus.PNG">
+
+<h1> CONTACTUS PAGE </h1>
+<img src="https://github.com/rachana703/cs648_assignments/blob/main/Assignment_2/screenshots/contactus.PNG">
+
+<h1> SOLUTIONS PAGE </h1>
+<img src="https://github.com/rachana703/cs648_assignments/blob/main/Assignment_2/screenshots/solutions.PNG">
 

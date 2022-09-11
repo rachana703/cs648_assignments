@@ -6,5 +6,6 @@
 
 <p> Attaching screenshots of our website<p>
 <h1> HOME PAGE </h1>
-![alt text](https://github.com/rachana703/cs648_assignments/blob/main/Assignment_2/screenshots/index.PNG?raw=true)
+<img src="https://github.com/rachana703/cs648_assignments/blob/main/Assignment_2/screenshots/index.PNG">
+
 

@@ -1,0 +1,81 @@
+body{
+    width:960px;
+    margin:0 0 0 20px;
+    font: 1em Arial, Helvetica, sans-serif;
+    line-height: 2em;
+}
+
+ul:first-of-type{
+    list-style: none;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #CC1C0D;
+    background-color: #DFE3E6;
+    border: 1px solid #929CA4;
+    border-radius: 15px;
+    padding-left: 15px;
+}
+
+a {
+    color: #CC1C0D;
+}
+
+p > img {
+    float: left;
+    margin-right: 10px;
+}
+
+section > img {
+    float: left;
+    border: 2px solid #CC1C0D;
+    margin: 0 10px 0 0;
+    border-radius: 40px
+}
+
+section > p {
+    margin-top: 0;
+}
+
+.pricing > div {
+    float :left;
+    width: 24%;
+    border: 1px solid #929CA4;
+    border-radius: 20px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.pricing > div:not(:last-child){
+    margin-right: 10px;
+}
+
+.pricing :nth-child(1) > h3 {
+    border-top: 10px solid #CC1C0D;
+}
+.pricing :nth-child(2) > h3 {
+    border-top: 10px solid #37A4A4;
+}
+.pricing :nth-child(3) > h3 {
+    border-top: 10px solid #685288;
+}
+.pricing :nth-child(4) > h3 {
+    border-top: 10px solid #000000;
+}
+
+.pricing h3{
+    border-radius: 0;
+    border: none;
+    padding-top: 10px;
+    background-color: transparent;
+    color: #000;
+} 
+
+#vretain, #vconvert, #vprospect{
+    font-weight: bold;
+}
+
+ul > li > ul {
+    margin-left: 25px;
+}

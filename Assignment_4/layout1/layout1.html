@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: sans-serif;
+            font-size: 1em;
+        }
+
+        main {
+            display: grid;
+            width: 960px;
+            min-height: 600px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 70px 280px 1fr 40px;
+            grid-gap: 18px;
+            grid-template-areas:
+                "comp_logo head"
+                "prodImage prodImage"
+                "prod1 prod2"
+                "foot foot";
+            margin: 20px auto;
+        }
+
+        main>* {
+            background: silver;
+        }
+
+        .comp_logo {
+            width: 200px;
+            grid-area: comp_logo
+        }
+
+        .productImage {
+            grid-area: prodImage;
+        }
+
+        ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			display: grid;
+			height: 40px;
+			grid-template: auto / repeat(4, 1fr);
+			grid-gap: 18px;
+            align-self: center;
+			align-content: center;
+		}
+
+        ul>li{
+            text-align: center;
+        }
+
+        footer {
+            grid-area: foot;
+			text-align: center;
+        }
+    </style>
+    <title>Layout 1</title>
+</head>
+
+<body>
+    <main>
+        <div class="comp_logo">Company Logo</div>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+            </ul>
+        
+        <div class="productImage">
+            Featured Product Image
+        </div>
+        <div class="prod1">Product 1</div>
+        <div class="prod2">Product 2</div>
+        <footer>
+            <p>Copyright Notice</p>
+        </footer>
+    </main>
+</body>
+
+</html>

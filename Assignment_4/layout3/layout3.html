@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+		body {
+            margin: 0;
+            font-family: sans-serif;
+			display: grid;
+			width: 1000px;
+			grid-gap: 20px;
+			margin: 20px auto;
+			grid-template-columns: repeat(4, 1fr);
+			grid-template-rows: 70px 300px 40px 150px 150px 40px;
+			grid-template-areas:
+				"comp_logo . navigation  navigation"
+				"header header      header header"
+				"title1 .           title2 ."
+				"blog1  blog1       prod1 prod2"
+				"blog2  blog2       prod3 prod4"
+				"footer footer      footer  footer";            
+        }
+		div, nav ul, header, h1, section, footer, a {
+            background: silver;
+         }
+		h1 {
+            font-size: 2.7rem;
+        }
+		div:nth-of-type(1) {
+			grid-area: comp_logo;
+		}
+		nav {
+			grid-area: navigation;
+			align-self: center;
+		}
+		nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			display: grid;
+			height: 45px;
+			grid-template: auto / repeat(4, 1fr);
+			grid-gap: 21px;
+			justify-items: center;
+			align-content: center;
+		}
+		
+		div:nth-of-type(2) {
+			grid-area: title1;
+		}
+		div:nth-of-type(3) {
+			grid-area: title2;
+		}
+		.blog1 {
+			grid-area: blog1;
+		}
+		.prod1 {
+			grid-area: prod1;
+		}
+		.prod2 {
+			grid-area: prod2;
+		}
+		.blog2 {
+			grid-area: blog2;
+		}
+		.prod3 {
+			grid-area: prod3;
+		}
+		.prod4 {
+			grid-area: prod4;
+		}
+		header {
+			grid-area: header;
+			padding: 45px;
+		}
+		footer {
+			grid-area: footer;
+			text-align: center;
+		}
+    </style>
+    <title>Layout 3</title>
+</head>
+<body>
+	<div>Company Logo</div>
+    <nav>
+    	<ul>
+        	<li>Item 1</li>
+        	<li>Item 2</li>
+        	<li>Item 3</li>
+        	<li>Item 4</li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Lorem ipsum dolor sit amet, ne saepe phaedrum cotidieque has, natum zril pro.</h1>
+        <h2>Cu vel aliquid lobortis deseruisse. Nam at adipisci dignissim forensibus. Qui an recteque maluisset assentior, cu ferri aperiam imperdiet sed.</h2>
+    </header>
+    <div>Title</div>
+    <div>Title</div>
+    <section class="blog1">Blog Post 1</section>
+    <section class="prod1">Featured Product 1</section>
+    <section class="prod2">Featured Product 2</section>
+    <section class="blog2">Blog Post 2</section>
+    <section class="prod3">Featured Product 3</section>
+    <section class="prod4">Featured Product 4</section>
+    <footer>
+        <p>Copyright Notice</p>
+    </footer>
+</body>
+</html>

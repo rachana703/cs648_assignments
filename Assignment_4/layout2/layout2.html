@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+		body {
+            margin: 0;
+            font-family: sans-serif;
+			display: grid;
+			width: 960px;
+			grid-gap: 22px;
+			margin: 22px auto;
+			grid-template-columns: repeat(4, 1fr);
+			grid-template-rows: 70px 220px auto 40px;
+			grid-template-areas:
+				"comp_logo .    navi navi"
+				"head head head head"
+				"main main main main"
+				"foot foot foot foot";            
+        }
+        header {
+			grid-area: head;
+		}
+		
+		div, nav ul, footer{
+            background: silver;
+        }
+
+        main {
+			grid-area: main;
+			display: grid;
+			grid-gap: 15px;
+			grid-template: repeat(3, 150px) / repeat(3, 1fr);
+		}
+       
+		h1 {
+            font-size: 2.8rem;
+            margin-top: .3em;
+        }
+		.comp_logo {
+			grid-area: comp_logo;
+		}
+		nav {
+			grid-area: navi;
+			align-self: center;
+		}
+		nav > ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			display: grid;
+			height: 50px;
+			grid-template: auto / repeat(4, 1fr);
+			grid-gap: 20px;
+			justify-items: center;
+			align-content: center;
+		}
+		
+		
+		footer {
+			grid-area: foot;
+			text-align: center;
+		}
+    </style>
+    <title>Layout 2</title>
+</head>
+<body>
+	<div class="comp_logo">Company Logo</div>
+    <nav>
+    	<ul>
+        	<li>Item 1</li>
+        	<li>Item 2</li>
+        	<li>Item 3</li>
+        	<li>Item 4</li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Lorem ipsum dolor sit amet, ne saepe phaedrum cotidieque has, natum zril pro ei.</h1>
+        <h2>Cu vel aliquid lobortis deseruisse. Nam at adipisci dignissim forensibus. Qui an recteque maluisset assentior, cu ferri aperiam imperdiet sed.</h2>
+    </header>
+    <main>
+        <div></div> <div></div> <div></div>
+        <div></div> <div></div> <div></div>
+        <div></div> <div></div> <div></div>
+    </main>
+    <footer>
+        <p>Copyright Notice</p>
+    </footer>
+</body>
+</html>
